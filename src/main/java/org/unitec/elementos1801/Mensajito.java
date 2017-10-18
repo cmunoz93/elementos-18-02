@@ -54,6 +54,12 @@ public class Mensajito {
         this.id = id;
         this.titulo = titulo;
         this.cuerpo = cuerpo;
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Mensajito{" + "id=" + id + ", titulo=" + titulo + ", cuerpo=" + cuerpo + '}';
     }
     
 
