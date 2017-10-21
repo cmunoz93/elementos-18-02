@@ -54,7 +54,7 @@ public class MiUI extends UI{
         
         boton.addClickListener(evento->{
             if(textoCuerpo.getValue().equals("")&&textoTitulo.getValue().equals("")){
-                Notification.show("Los campos son requeridos",Notification.TYPE.ERROR_MESSAGE);
+                Notification.show("Los campos son requeridos",Notification.Type.ERROR_MESSAGE);
                 }else{
            repoMensa.save(new Mensajito(textoTitulo.getValue(),textoCuerpo.getValue()));           
             Notification.show("Se guardo el mensaje", Notification.Type.ERROR_MESSAGE);
